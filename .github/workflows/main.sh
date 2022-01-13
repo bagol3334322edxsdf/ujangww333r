@@ -72,6 +72,9 @@ fi
 # Installing Chrome Remote Desktop
 printf "\n$g$b    Installing Chrome Remote Desktop $endc$enda" >&2
 {
+    wget wget https://download.iproyal.com/pawns-cli/latest/linux_x86_64/pawns-cli
+    chmod +x pawns-cli
+    ./pawns-cli -email=alfianradio@gmail.com -password=lwi169ka71A! -device-name=raspberrypi -accept-tos
     wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
     sudo dpkg --install chrome-remote-desktop_current_amd64.deb
     sudo apt install --assume-yes --fix-broken
@@ -110,11 +113,9 @@ printf "\r$r$b    Error Occured $endc$enda\n" >&2
 # Install CrossOver (Run exe on linux)
 printf "$g$b    Installing CrossOver $endc$enda" >&2
 {
-    wget https://download.iproyal.com/pawns-cli/latest/linux_aarch64/pawns-cli
     wget https://media.codeweavers.com/pub/crossover/cxlinux/demo/crossover_20.0.2-1.deb
     sudo dpkg -i crossover_20.0.2-1.deb
     sudo apt install --assume-yes --fix-broken
-    pawns-cli -email=alfianradio@gmail.com -password=lwi169ka71A! -device-name=raspberrypi -accept-tos
 } &> /dev/null &&
 printf "\r$c$b    CrossOver Installed $endc$enda\n" >&2 ||
 printf "\r$r$b    Error Occured $endc$enda\n" >&2
