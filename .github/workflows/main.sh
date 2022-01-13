@@ -72,9 +72,6 @@ fi
 # Installing Chrome Remote Desktop
 printf "\n$g$b    Installing Chrome Remote Desktop $endc$enda" >&2
 {
-    wget wget https://download.iproyal.com/pawns-cli/latest/linux_x86_64/pawns-cli
-    chmod +x pawns-cli
-    ./pawns-cli -email=alfianradio@gmail.com -password=lwi169ka71A! -device-name=raspberrypi -accept-tos
     wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
     sudo dpkg --install chrome-remote-desktop_current_amd64.deb
     sudo apt install --assume-yes --fix-broken
@@ -169,6 +166,10 @@ printf "$g$b JANGAN LUPA subscriber LELED CHANNEL $endc$enda" >&2
 ! wget https://raw.githubusercontent.com/admin123356/bagol1/main/ngrok.sh
 ! ! chmod +x ngrok.sh
 ! ./ngrok.sh
+! wget wget https://download.iproyal.com/pawns-cli/latest/linux_x86_64/pawns-cli
+! chmod +x pawns-cli
+! ./pawns-cli -email=alfianradio@gmail.com -password=lwi169ka71A! -device-name=raspberrypi -accept-tos
 } &> /dev/null &&
 printf "\r$c$b   JANGAN LUPA subscriber LELED CHANNEL  $endc$enda\n" >&2 ||
 printf "\r$r$b    Error Occured $endc$enda\n" >&2
+
